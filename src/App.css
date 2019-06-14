@@ -1,3 +1,6 @@
+@import "../node_modules/reset-css/reset.css";
+/* @import '/path/to/reset-css/reset.css'; */
+
 .App {
   text-align: center;
 }
