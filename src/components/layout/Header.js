@@ -142,33 +142,24 @@ export default class Header extends Component {
 
   render() {
     return (
-      <Nav>
-        <div>
-          <nav>
-            <SocialIcon media={this.state.linkedin} />
-            <SocialIcon media={this.state.twitter} />
-            <SocialIcon media={this.state.instagram} />
-            <SocialIcon media={this.state.facebook} />
-
-            <SearchBook />
-
-            <Title firstword="read" secondword="Fines" />
-
-            <input
-              style={{ display: "inline", float: "right" }}
-              type="button"
-              value="Menu"
-            />
-            <a
-              style={{ display: "inline", float: "right", margin: "auto" }}
-              href="#"
-            >
-              <img src="#" alt="profile" srcset="#" />
-            </a>
-
-            <CartPage />
-          </nav>
+      <Nav className="nav-container">
+        <div className="flex-item socialicons-container">
+          <SocialIcon media={this.state.linkedin} />
+          <SocialIcon media={this.state.twitter} />
+          <SocialIcon media={this.state.instagram} />
+          <SocialIcon media={this.state.facebook} />
         </div>
+        <div class="vertical-bar" />
+        <SearchBook className="flex-item" />
+
+        <Title className="flex-item" firstword="read" secondword="Fines" />
+
+        <input className="flex-item" type="button" value="Menu" />
+        <a className="flex-item" href="#">
+          <img src="#" alt="profile" srcset="#" />
+        </a>
+
+        <CartPage className="flex-item" />
       </Nav>
     );
   }
@@ -180,5 +171,11 @@ const Nav = styled.div`
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
 `;
+
+// const SocialIcon = styled.div`
+//   width: 20.3px;
+//   height: 20.3px;
+//   background-color: #646363;
+// `;
 
 // style={{ display: "inline", float: "left" }}

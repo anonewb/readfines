@@ -1,7 +1,18 @@
 import React from "react";
 import "./App.css";
-
 import Header from "./components/layout/Header";
+
+// FA component setup
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCheckSquare,
+  faCoffee,
+  faSearch
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, faCheckSquare, faCoffee, faSearch);
+// FA component setup ends
 
 function App() {
   return (

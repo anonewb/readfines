@@ -25,11 +25,38 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* HEADER COMPONENT */
+
+nav .socialicons {
+  position: relative;
+  top: 15px;
+  left: 50px;
+}
+
+.nav-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-container .flex-item {
+  /*  */
+}
+
+.socialicons-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vertical-bar {
+  border-left: 1px solid black;
+  height: 30px;
+}
+
+.search-box {
+  border: none;
+  padding: 5px;
 }

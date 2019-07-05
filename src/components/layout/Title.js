@@ -5,9 +5,6 @@ export default function Title(props) {
     <div>
       <h1
         style={{
-          display: "inline",
-          float: "left",
-          margin: "auto",
           fontWeight: "300"
         }}
       >
